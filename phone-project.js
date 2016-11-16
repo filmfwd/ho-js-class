@@ -4,23 +4,29 @@ var ACCESSORY_PRICE = 20;
 var TAX_RATE = .09;
 var SPENDING_THRESHOLD = 1200;
 
-var item = [PHONE_PRICE, ACCESSORY_PRICE];
-
 // calculate price + tax 
 function pricePlusTax(item) {
-var finalPrice = item + (item * TAX_RATE);
+var finalPrice = item += (item * TAX_RATE);
 return finalPrice;
 }
 
+// how much do (n) phones and (y) accessories cost  
 function cost() {
-// how much do (n) phones and (y) accessories cost    
+  
 }
 
 function buyItems() {
     while (bankAccount > SPENDING_THRESHOLD ) {
     var bankAccount = 5000;
-    var moneyLeft = bankAccount - pricePlusTax();
-// buy maximum cost
+    (function spend() {
+        bankAccount -= (pricePlusTax(PHONE_PRICE) + pricePlusTax(ACCESSORY_PRICE()}());
+    } else {
+        bankAccount -= (pricePlusTax(PHONE_PRICE));
+    } else {
+        bankAccount += (pricePlusTax(ACCESSORY_PRICE))
+    }
+    }
+
 
 
 // how much $ is left    
